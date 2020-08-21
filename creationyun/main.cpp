@@ -1,4 +1,4 @@
-#include "unzip_to_dataset.h"
+#include "malware_unzip.h"
 
 int main(int argc, char *argv[])
 {
@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 		return 0;
 	}
 	
-	inflate_mv_dataset(argv[1], argv[2], argv[3]);
+	malware_unzip(argv[1], argv[2], argv[3]);
 	return 0;
 }
 

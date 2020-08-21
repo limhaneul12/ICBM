@@ -1,9 +1,9 @@
 LDLIBS=-lz
 
-all: unzip_to_dataset 
+all: malware_unzip
 
-unzip_to_dataset: main.o unzip_to_dataset.o
+malware_unzip: main.o malware_unzip.o
 	$(LINK.cc) $^ $(LDLIBS) -o $@
 
 clean:
-	rm -f unzip_to_dataset *.o
+	rm -f malware_unzip *.o
